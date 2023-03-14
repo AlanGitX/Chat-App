@@ -1,0 +1,133 @@
+{
+  "_id": {
+    "$oid": "63eb77a355f9ebf2cd595fbb"
+  },
+  "username": "Raj Kumar",
+  "profilepic": "https://images.unsplash.com/photo-1554080353-a576cf803bda?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGhvdG98ZW58MHx8MHx8&w=1000&q=80",
+  "phone": 12145201452,
+  "password": "raj",
+  "messages": [
+    {
+      "message": "Hii",
+      "direction": "to",
+      "phone": 12145201452
+    },
+    {
+      "message": "hii",
+      "direction": "to",
+      "phone": 12145201452
+    },
+    {
+      "message": "hii",
+      "direction": "from",
+      "phone": 12145201452
+    },
+    {
+      "message": "hii",
+      "direction": "from",
+      "phone": "2554225155"
+    },
+    {
+      "message": "heyy",
+      "direction": "from",
+      "phone": "2554225155"
+    },
+    {
+      "message": "how are you?",
+      "direction": "from",
+      "phone": "2554225155"
+    },
+    {
+      "message": "hii",
+      "direction": "from",
+      "phone": "2554225155"
+    },
+    {
+      "message": "heyy",
+      "direction": "from",
+      "phone": "2554225155"
+    },
+    {
+      "message": "hello",
+      "direction": "from",
+      "phone": "2554225155"
+    },
+    {
+      "message": "I am fine..",
+      "direction": "to",
+      "phone": 2554225155
+    },
+    {
+      "message": "hi",
+      "direction": "to",
+      "phone": 12145201453
+    },
+    {
+      "message": "heyy",
+      "direction": "to",
+      "phone": 15224144452
+    },
+    {
+      "message": "How are you?",
+      "direction": "to",
+      "phone": 2554225155
+    },
+    {
+      "message": "heyy",
+      "direction": "to",
+      "phone": 2554225155
+    },
+    {
+      "message": "Heyy",
+      "direction": "to",
+      "phone": 2554225155
+    },
+    {
+      "message": "hii",
+      "direction": "from",
+      "phone": "35282887452"
+    },
+    {
+      "message": "hey",
+      "direction": "to",
+      "phone": 35282887452
+    },
+    {
+      "message": "heyy",
+      "direction": "to",
+      "phone": 35282887452
+    },
+    {
+      "message": "hii",
+      "direction": "to",
+      "phone": 452825842
+    },
+    {
+      "message": "How are you",
+      "direction": "to",
+      "phone": 452825842
+    },
+    {
+      "message": "Hii",
+      "direction": "to",
+      "phone": 852236663285
+    },
+    {
+      "message": "Heyy",
+      "direction": "to",
+      "phone": 852236663285
+    },
+    {
+      "message": "Heyy",
+      "direction": "from",
+      "phone": "852236663285"
+    },
+    {
+      "message": "How r u?",
+      "direction": "from",
+      "phone": "852236663285"
+    }
+  ],
+  "contacts": [],
+  "__v": 25
+}
