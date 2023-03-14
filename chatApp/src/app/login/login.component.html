@@ -1,0 +1,26 @@
+<app-header></app-header>
+
+<div class="page page_login">
+  <form class="form" action [formGroup]="Loginform" (ngSubmit)="logindata()">
+    <div class="form__container">
+      <div class="logo"><img class="logo__pic" src="https://cdn-icons-png.flaticon.com/512/134/134914.png" width="45"></div>
+      <div class="fieldset">
+        <div class="field"><input class="input" type="email" placeholder="Phone number" name="acno" formControlName="acno" required></div>
+        <div class="text-danger mb-2" *ngIf="this.Loginform.get('acno')?.errors&&this.Loginform.get('acno')?.touched">Invalid Phone number</div>
+
+        <div class="field"><input class="input" type="password" name="pswd" formControlName="pswd" placeholder="Password" required></div>
+      </div>
+      <button  class="btn" type="submit">Sign in</button>
+      <div *ngIf="loader" class="text-center mt-3">
+        <div class="spinner-border text-light" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+        Logging in
+    </div>
+
+      <p>{{errorMsg}}</p>
+
+    </div>
+    <div class="form__footer" *ngIf="!loader">Don't Have an Account? <a routerLink="/register">Create it</a>.</div>
+  </form>
+</div>

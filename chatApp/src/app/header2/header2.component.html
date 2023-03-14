@@ -1,0 +1,42 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand"> <img src="https://cdn-icons-png.flaticon.com/512/134/134914.png" height="50px" alt=""> Lets Chat</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <div *ngIf="!condition" class="text-center text-light">
+                <div class="spinner-border" role="status">
+                  <span class="sr-only"></span>
+                </div>
+                Please wait,logging out
+            </div>
+                <button *ngIf="condition" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                    Logout
+                  </button>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+
+<div class="modal fade"  id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header" >
+          <h5 class="modal-title" id="exampleModalLongTitle">Logout</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Can you please confirm that you need to logout from the account?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal" (click)="logout()">Yes</button>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,92 @@
+<app-header></app-header>
+
+
+
+<div class="page">
+  <form class="form" [formGroup]="registerform" (ngSubmit)="logindata()">
+    <div class="form__container">
+      <div class="logo">
+        <img class="logo__pic" src="https://cdn-icons-png.flaticon.com/512/134/134914.png" width="45" />
+      </div>
+      <div class="fieldset">
+        <div class="field">
+          <input
+            class="input"
+            type="text"
+            formControlName="uname"
+            placeholder="Your Name"
+            name="Username"
+
+            required
+          />
+        </div>
+        <div class="field">
+          <input
+            class="input"
+            type="email"
+            formControlName="pno"
+            name="Phone"
+            placeholder="Phone Number"
+            required
+          />
+        </div>
+        <div
+        class="text-danger mb-2"
+        *ngIf="
+          this.registerform.get('pno')?.errors &&
+          this.registerform.get('pno')?.touched
+        "
+      >
+        Invalid phone number
+      </div>
+
+        <div class="field">
+          <input
+            class="input"
+            type="email"
+            formControlName="photo"
+            name="photo"
+            placeholder="PhotoUrl"
+            required
+          />
+        </div>
+        <div class="field">
+          <input
+            class="input"
+            type="password"
+            placeholder="Password"
+            formControlName="pswd"
+            name="password"
+            required
+          />
+        </div>
+
+        <div
+            class="text-danger mb-2"
+            *ngIf="
+              this.registerform.get('pswd')?.errors &&
+              this.registerform.get('pswd')?.touched
+            "
+          >
+            Invalid password
+          </div>
+      </div>
+      <button *ngIf="!sucessMsg" class="btn" type="submit">Sign up</button>
+      <div *ngIf="!sucessMsg" class="text">
+        By creating an account, you agree and accept our
+        <a >Terms</a> and <a>Privacy Policy</a>.
+      </div>
+    </div>
+    <div *ngIf="sucessMsg" class="text-center mb-5">
+      <div class="spinner-border text-light" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+      Regestration Successful
+      <br>
+      Redirecting To Login
+    </div>
+    <div class="form__footer" *ngIf="!sucessMsg">
+      Already have an account? <a routerLink="/login">Log in</a>.
+    </div>
+  </form>
+</div>
